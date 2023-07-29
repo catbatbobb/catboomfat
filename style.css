@@ -1,19 +1,17 @@
 /* Global styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f5f9; /* Light blue background color */
-  color: #333; /* Dark text color */
+  background-color: #212121; /* Dark background color */
+  color: #ffffff; /* White text color */
 }
 
 /* Header styles */
 header {
   text-align: center;
-  background-color: #1E90FF; /* Blue header background color */
+  background-color: #0d47a1; /* Dark blue header background color */
   padding: 20px;
-  color: #fff; /* White text color for the header */
-  margin-bottom: 20px; /* Add margin at the bottom of the header */
 }
 
 .logo {
@@ -38,40 +36,39 @@ nav ul {
 
 nav li {
   display: inline-block;
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
 }
 
 nav a {
-  color: #fff;
+  color: #ffffff; /* White text color for navigation links */
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 10px 20px;
-  transition: background-color 0.2s;
+  transition: opacity 0.2s;
 }
 
 nav a:hover {
-  background-color: #0b69c3; /* Darker blue background for links on hover */
-  border-radius: 5px;
-}
-
-nav li:not(:last-child) {
-  margin-right: 20px;
+  opacity: 0.8;
 }
 
 /* Section styles */
 .section {
-  background-color: #fff; /* White background for sections */
+  background-color: #424242; /* Dark gray background for sections */
   padding: 20px;
   margin: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for sections */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Dark shadow for sections */
 }
 
 .section-title {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #1E90FF; /* Blue color for section titles */
+  color: #0d47a1; /* Dark blue color for section titles */
 }
 
 /* Table styles */
@@ -79,65 +76,22 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
-  margin-bottom: 20px; /* Add margin at the bottom of the table */
+  margin-bottom: 20px;
 }
 
 th, td {
-  border: 1px solid #1E90FF; /* Blue borders for table cells */
+  border: 1px solid #0d47a1; /* Dark blue borders for table cells */
   padding: 10px;
   text-align: left;
 }
 
 th {
-  background-color: #1E90FF; /* Blue background for table header cells */
-  color: #fff; /* White text color for table header cells */
+  background-color: #0d47a1; /* Dark blue background for table header cells */
+  color: #ffffff; /* White text color for table header cells */
 }
 
 /* Emoji styles */
 .emoji {
   margin-right: 5px;
   font-size: 1.2rem;
-}
-
-/* Media queries for responsiveness */
-@media screen and (max-width: 768px) {
-  /* Adjust header padding for smaller screens */
-  header {
-    padding: 10px;
-  }
-
-  /* Center align the logo for smaller screens */
-  .logo {
-    text-align: center;
-  }
-
-  /* Reduce font size for navigation links on smaller screens */
-  nav a {
-    font-size: 1rem;
-  }
-
-  /* Adjust padding for navigation links on smaller screens */
-  nav a {
-    padding: 8px 12px;
-  }
-
-  /* Reduce font size for section titles on smaller screens */
-  .section-title {
-    font-size: 1.3rem;
-  }
-
-  /* Adjust padding for section titles on smaller screens */
-  .section-title {
-    margin-bottom: 5px;
-  }
-
-  /* Adjust table font size for smaller screens */
-  table {
-    font-size: 14px;
-  }
-
-  /* Reduce padding for table cells on smaller screens */
-  th, td {
-    padding: 8px;
-  }
 }
